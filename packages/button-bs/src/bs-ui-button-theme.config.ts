@@ -7,23 +7,23 @@ const classPrefix = cssClassPrefix(baseClass)
 const getPrefixedClass = (value: string) => `${classPrefix}${value}`
 const variantClasses = enumToObjectByValue(BootstrapVariants)
 Object.keys(variantClasses).forEach(
-  value => (variantClasses[value] = getPrefixedClass(value))
+  (value) => (variantClasses[value] = getPrefixedClass(value))
 )
 const getOtlinePrefixedClass = (value: string) =>
   `${classPrefix}outline-${value}`
 const outlineVariantClasses = enumToObjectByValue(BootstrapVariants)
 Object.keys(outlineVariantClasses).forEach(
-  value => (outlineVariantClasses[value] = getOtlinePrefixedClass(value))
+  (value) => (outlineVariantClasses[value] = getOtlinePrefixedClass(value))
 )
 
 const darkVariantClasses = enumToObjectByValue(BootstrapVariants)
 Object.keys(darkVariantClasses).forEach(
-  value =>
+  (value) =>
     (darkVariantClasses[value] = getPrefixedClass(value) + ' ui-dark-mode')
 )
 const darkOutlineVariantClasses = enumToObjectByValue(BootstrapVariants)
 Object.keys(darkOutlineVariantClasses).forEach(
-  value =>
+  (value) =>
     (darkOutlineVariantClasses[value] =
       getOtlinePrefixedClass(value) + ' ui-dark-mode')
 )

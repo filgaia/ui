@@ -7,7 +7,7 @@ const classPrefix = cssClassPrefix(baseClass)
 const getPrefixedClass = (value: string) => `${classPrefix}${value}`
 const variantClasses = enumToObjectByValue(BootstrapVariants)
 Object.keys(variantClasses).forEach(
-  value => (variantClasses[value] = getPrefixedClass(value))
+  (value) => (variantClasses[value] = getPrefixedClass(value))
 )
 
 export const bsUiAlertThemeConfigDefaults: UiAlertThemeConfigModel = {

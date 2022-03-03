@@ -119,7 +119,7 @@ export default defineComponent({
     const main: Ref<HTMLElement | null> = ref(null)
     const wrapper: Ref<HTMLElement | null> = ref(null)
     const remove = ref(false)
-    watch(show, value => (remove.value = !value))
+    watch(show, (value) => (remove.value = !value))
     const visible = computed(() => show.value && !remove.value)
 
     const theme = useReactiveThemeConfig<UiModalThemeConfigModel>(

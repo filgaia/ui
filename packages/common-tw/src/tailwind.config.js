@@ -4,7 +4,6 @@ module.exports = {
       sans: ['Graphik', 'sans-serif'],
       serif: ['Merriweather', 'serif'],
     },
-
     extend: {
       colors: {
         primary: {

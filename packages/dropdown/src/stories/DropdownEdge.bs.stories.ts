@@ -101,7 +101,7 @@ const Template = (args: UiDropdownModel) => ({
   setup() {
     const container: Ref<HTMLElement | null> = ref(null)
 
-    watch(container, elem =>
+    watch(container, (elem) =>
       setTimeout(
         () => elem?.scrollIntoView({ block: 'center', inline: 'center' }),
         500

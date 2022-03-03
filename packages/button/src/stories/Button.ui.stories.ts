@@ -335,8 +335,7 @@ Toggle.args = {
 Toggle.parameters = {
   docs: {
     source: {
-      code:
-        '<ui-button variant="danger" toggle @toggle="toggle">Toggle</ui-button>',
+      code: '<ui-button variant="danger" toggle @toggle="toggle">Toggle</ui-button>',
     },
   },
 }

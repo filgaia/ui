@@ -10,15 +10,15 @@ const classPrefix = cssClassPrefix(baseClass)
 const getPrefixedClass = (value: string) => `${classPrefix}${value}`
 const variantClasses = enumToObjectByValue(BootstrapVariants)
 Object.keys(variantClasses).forEach(
-  value => (variantClasses[value] = `bg-${value}`)
+  (value) => (variantClasses[value] = `bg-${value}`)
 )
 const outlineVariantClasses = enumToObjectByValue(BootstrapVariants)
 Object.keys(outlineVariantClasses).forEach(
-  value => (outlineVariantClasses[value] = `border-${value}`)
+  (value) => (outlineVariantClasses[value] = `border-${value}`)
 )
 const textOutlineVariantClasses = enumToObjectByValue(BootstrapVariants)
 Object.keys(textOutlineVariantClasses).forEach(
-  value => (textOutlineVariantClasses[value] = `text-${value}`)
+  (value) => (textOutlineVariantClasses[value] = `text-${value}`)
 )
 export const bsUiCardThemeConfigDefaults: UiCardThemeConfigModel = {
   cssClass: {

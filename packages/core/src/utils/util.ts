@@ -1,7 +1,7 @@
 export const kebabToPascalCase = (value: string) =>
   value
-    .replace(/^./g, c => c.toUpperCase())
-    .replace(/-./g, c => c.toUpperCase()[1])
+    .replace(/^./g, (c) => c.toUpperCase())
+    .replace(/-./g, (c) => c.toUpperCase()[1])
 
 export const cssClassPrefix = (value: string) => `${value}-`
 
@@ -27,7 +27,4 @@ export const enumToObjectByValue = (enumType: EnumInterface) => {
 }
 
 export const generateId = (): string =>
-  Date.now().toString(36) +
-  Math.random()
-    .toString(36)
-    .substring(2)
+  Date.now().toString(36) + Math.random().toString(36).substring(2)

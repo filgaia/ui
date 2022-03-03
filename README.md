@@ -70,8 +70,8 @@ If your project uses other dependencies from other components add the, to your p
 i.e lets say your project needs the transition component
 ```
 "dependencies": {
-  "core-js": "^3.6.5",
-  "vue": "3.1.5",
+  "core-js": "^3.21.1",
+  "vue": "3.2.31",
   "@uicr/core": "*",
   ...
   "@uicr/transition": "*"

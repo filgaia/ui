@@ -57,8 +57,7 @@ Email.args = {
 Email.parameters = {
   docs: {
     source: {
-      code:
-        '<ui-input label="Email address" type="email" disabled="false"></ui-input>',
+      code: '<ui-input label="Email address" type="email" disabled="false"></ui-input>',
     },
   },
 }
@@ -72,8 +71,7 @@ Password.args = {
 Password.parameters = {
   docs: {
     source: {
-      code:
-        '<ui-input label="Password" type="password" disabled="false"></ui-input>',
+      code: '<ui-input label="Password" type="password" disabled="false"></ui-input>',
     },
   },
 }
@@ -87,8 +85,7 @@ Text.args = {
 Text.parameters = {
   docs: {
     source: {
-      code:
-        '<ui-input label="Text input" type="text" disabled="false"></ui-input>',
+      code: '<ui-input label="Text input" type="text" disabled="false"></ui-input>',
     },
   },
 }
@@ -102,8 +99,7 @@ Disabled.args = {
 Disabled.parameters = {
   docs: {
     source: {
-      code:
-        '<ui-input label="Disabled input" type="text" disabled="true"></ui-input>',
+      code: '<ui-input label="Disabled input" type="text" disabled="true"></ui-input>',
     },
   },
 }

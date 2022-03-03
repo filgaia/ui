@@ -87,8 +87,7 @@ Primary.args = {
 Primary.parameters = {
   docs: {
     source: {
-      code:
-        '<ui-card variant="primary" :header="header" :title="title" :outline="outline" :style="style"></ui-card>',
+      code: '<ui-card variant="primary" :header="header" :title="title" :outline="outline" :style="style"></ui-card>',
     },
   },
 }
@@ -105,8 +104,7 @@ Secondary.args = {
 Secondary.parameters = {
   docs: {
     source: {
-      code:
-        '<ui-card variant="secondary" :header="header" :title="title" :outline="outline" :style="style></ui-card>',
+      code: '<ui-card variant="secondary" :header="header" :title="title" :outline="outline" :style="style></ui-card>',
     },
   },
 }
@@ -123,8 +121,7 @@ Success.args = {
 Success.parameters = {
   docs: {
     source: {
-      code:
-        '<ui-card variant="success" :header="header" :title="title" :outline="outline" :style="style></ui-card>',
+      code: '<ui-card variant="success" :header="header" :title="title" :outline="outline" :style="style></ui-card>',
     },
   },
 }
@@ -141,8 +138,7 @@ Danger.args = {
 Danger.parameters = {
   docs: {
     source: {
-      code:
-        '<ui-card variant="danger" :header="header" :title="title" :outline="outline" :style="style></ui-card>',
+      code: '<ui-card variant="danger" :header="header" :title="title" :outline="outline" :style="style></ui-card>',
     },
   },
 }
@@ -159,8 +155,7 @@ Warning.args = {
 Warning.parameters = {
   docs: {
     source: {
-      code:
-        '<ui-card variant="warning" :header="header" :title="title" :outline="outline" :style="style></ui-card>',
+      code: '<ui-card variant="warning" :header="header" :title="title" :outline="outline" :style="style></ui-card>',
     },
   },
 }
@@ -177,8 +172,7 @@ Info.args = {
 Info.parameters = {
   docs: {
     source: {
-      code:
-        '<ui-card variant="info" :header="header" :title="title" :outline="outline" :style="style></ui-card>',
+      code: '<ui-card variant="info" :header="header" :title="title" :outline="outline" :style="style></ui-card>',
     },
   },
 }
@@ -195,8 +189,7 @@ Light.args = {
 Light.parameters = {
   docs: {
     source: {
-      code:
-        '<ui-card variant="light" :header="header" :title="title" :outline="outline" :style="style></ui-card>',
+      code: '<ui-card variant="light" :header="header" :title="title" :outline="outline" :style="style></ui-card>',
     },
   },
 }
@@ -213,8 +206,7 @@ Dark.args = {
 Dark.parameters = {
   docs: {
     source: {
-      code:
-        '<ui-card variant="dark" :header="header" :title="title" :outline="outline" :style="style></ui-card>',
+      code: '<ui-card variant="dark" :header="header" :title="title" :outline="outline" :style="style></ui-card>',
     },
   },
 }
@@ -231,8 +223,7 @@ OutlinePrimary.args = {
 OutlinePrimary.parameters = {
   docs: {
     source: {
-      code:
-        '<ui-card variant="primary" :header="header" :title="title" :outline="outline" :style="style></ui-card>',
+      code: '<ui-card variant="primary" :header="header" :title="title" :outline="outline" :style="style></ui-card>',
     },
   },
 }
@@ -249,8 +240,7 @@ OutlineSecondary.args = {
 OutlineSecondary.parameters = {
   docs: {
     source: {
-      code:
-        '<ui-card variant="secondary" :header="header" :title="title" :outline="outline" :style="style></ui-card>',
+      code: '<ui-card variant="secondary" :header="header" :title="title" :outline="outline" :style="style></ui-card>',
     },
   },
 }
@@ -267,8 +257,7 @@ OutlineSuccess.args = {
 OutlineSuccess.parameters = {
   docs: {
     source: {
-      code:
-        '<ui-card variant="success" :header="header" :title="title" :outline="outline" :style="style></ui-card>',
+      code: '<ui-card variant="success" :header="header" :title="title" :outline="outline" :style="style></ui-card>',
     },
   },
 }
@@ -285,8 +274,7 @@ OutlineDanger.args = {
 OutlineDanger.parameters = {
   docs: {
     source: {
-      code:
-        '<ui-card variant="danger" :header="header" :title="title" :outline="outline" :style="style></ui-card>',
+      code: '<ui-card variant="danger" :header="header" :title="title" :outline="outline" :style="style></ui-card>',
     },
   },
 }
@@ -303,8 +291,7 @@ OutlineWarning.args = {
 OutlineWarning.parameters = {
   docs: {
     source: {
-      code:
-        '<ui-card variant="warning" :header="header" :title="title" :outline="outline" :style="style></ui-card>',
+      code: '<ui-card variant="warning" :header="header" :title="title" :outline="outline" :style="style></ui-card>',
     },
   },
 }
@@ -321,8 +308,7 @@ OutlineInfo.args = {
 OutlineInfo.parameters = {
   docs: {
     source: {
-      code:
-        '<ui-card variant="info" :header="header" :title="title" :outline="outline" :style="style></ui-card>',
+      code: '<ui-card variant="info" :header="header" :title="title" :outline="outline" :style="style></ui-card>',
     },
   },
 }
@@ -339,8 +325,7 @@ OutlineLight.args = {
 OutlineLight.parameters = {
   docs: {
     source: {
-      code:
-        '<ui-card variant="light" :header="header" :title="title" :outline="outline" :style="style></ui-card>',
+      code: '<ui-card variant="light" :header="header" :title="title" :outline="outline" :style="style></ui-card>',
     },
   },
 }
@@ -357,8 +342,7 @@ OutlineDark.args = {
 OutlineDark.parameters = {
   docs: {
     source: {
-      code:
-        '<ui-card variant="dark" :header="header" :title="title" :outline="outline" :style="style></ui-card>',
+      code: '<ui-card variant="dark" :header="header" :title="title" :outline="outline" :style="style></ui-card>',
     },
   },
 }
@@ -373,8 +357,7 @@ TitlesAndText.args = {
 TitlesAndText.parameters = {
   docs: {
     source: {
-      code:
-        '<ui-card :title="title" :subtitle="subtitle" :style="style></ui-card>',
+      code: '<ui-card :title="title" :subtitle="subtitle" :style="style></ui-card>',
     },
   },
 }
@@ -420,8 +403,7 @@ HeaderAndFooter.args = {
 HeaderAndFooter.parameters = {
   docs: {
     source: {
-      code:
-        '<ui-card :header="header" :title="title" :footer="footer" :centerText="centerText"></ui-card>',
+      code: '<ui-card :header="header" :title="title" :footer="footer" :centerText="centerText"></ui-card>',
     },
   },
 }

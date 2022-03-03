@@ -51,9 +51,9 @@ export default defineComponent({
     } = toRefs(props)
     const checkedValue = ref(modelValue.value)
 
-    watch(modelValue, value => (checkedValue.value = value))
+    watch(modelValue, (value) => (checkedValue.value = value))
 
-    watch(checkedValue, v => emit('update:modelValue', v))
+    watch(checkedValue, (v) => emit('update:modelValue', v))
 
     const theme = useReactiveThemeConfig<UiCheckboxThemeConfigModel>(
       TAG_NAME,

@@ -9,7 +9,7 @@ import { UiModalThemeConfigModel } from '@uicr/modal'
 const baseClass = 'modal'
 const bgVariantClasses = enumToObjectByValue(BootstrapVariants)
 Object.keys(bgVariantClasses).forEach(
-  value => (bgVariantClasses[value] = `bg-${value}`)
+  (value) => (bgVariantClasses[value] = `bg-${value}`)
 )
 
 export const bsUiModalThemeConfigDefaults: UiModalThemeConfigModel = {

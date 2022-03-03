@@ -70,12 +70,11 @@ export default defineComponent({
       uiToastThemeConfigDefaults
     )
 
-    const filterPosition = (position: string) => ([, toast]: [
-      string,
-      UiToastModel
-    ]) =>
-      (toast.position || props.defaultPosition).toUpperCase() ===
-      position.toUpperCase()
+    const filterPosition =
+      (position: string) =>
+      ([, toast]: [string, UiToastModel]) =>
+        (toast.position || props.defaultPosition).toUpperCase() ===
+        position.toUpperCase()
 
     const getQueueList = (queue: UiToastQueueModel): PositionQueue[] =>
       Object.entries(theme.value.cssClass.positions)

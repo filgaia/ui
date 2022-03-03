@@ -10,8 +10,10 @@ module.exports = {
       },
     },
   ],
-  globals: {
-    defineProps: 'readonly',
-    defineEmits: 'readonly',
+  rules: {
+    '@typescript-eslint/ban-types': 'warn',
+  },
+  env: {
+    'vue/setup-compiler-macros': true,
   },
 }

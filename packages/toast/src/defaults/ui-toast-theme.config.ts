@@ -4,7 +4,7 @@ import { UiToastThemeConfigModel } from '../'
 const baseClass = 'toast'
 const bgVariantClasses = enumToObjectByValue(BootstrapVariants)
 Object.keys(bgVariantClasses).forEach(
-  value => (bgVariantClasses[value] = `bg-${value}`)
+  (value) => (bgVariantClasses[value] = `bg-${value}`)
 )
 
 export const uiToastThemeConfigDefaults: UiToastThemeConfigModel = {

@@ -6,11 +6,9 @@
       :class="theme.cssClass.item"
     >
       <a
-        :class="
-          `${theme.cssClass.link}
+        :class="`${theme.cssClass.link}
           ${tabsState.active === index ? theme.cssClass.itemActive : ''}
-          ${tab.props.disabled === true ? theme.cssClass.itemDisabled : ''}`
-        "
+          ${tab.props.disabled === true ? theme.cssClass.itemDisabled : ''}`"
         @click="select(index)"
         :aria-current="tabsState.active === index ? aria.currentPage : null"
         :role="aria.role"

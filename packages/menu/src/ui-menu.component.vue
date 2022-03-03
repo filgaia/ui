@@ -15,7 +15,7 @@
       v-bind="item"
       :active="selectedIndex === i"
       :ref="
-        el => {
+        (el) => {
           items[i] = el
         }
       "
@@ -69,7 +69,7 @@ export default defineComponent({
     )
 
     const newDatasource = computed(() => {
-      return datasource.value.map(item => {
+      return datasource.value.map((item) => {
         if (typeof item !== 'string') {
           return item
         }

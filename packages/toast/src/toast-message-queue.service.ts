@@ -40,8 +40,8 @@ export class ToastMessageQueueService implements UiToastService {
 
   public clear() {
     const keys = Object.keys(this.queueHash)
-    keys.forEach(key => delete this.queueHash[key])
-    this.queueList.forEach(q => (q.value = { ...q.value, messages: [] }))
+    keys.forEach((key) => delete this.queueHash[key])
+    this.queueList.forEach((q) => (q.value = { ...q.value, messages: [] }))
   }
 
   public register(): Ref<UiToastQueueModel> {
@@ -50,7 +50,7 @@ export class ToastMessageQueueService implements UiToastService {
       messages: [],
     } as UiToastQueueModel)
 
-    this.queueList.forEach(q => (q.value = { ...q.value, messages: [] }))
+    this.queueList.forEach((q) => (q.value = { ...q.value, messages: [] }))
     this.queueList.push(queue)
     queue.value = { ...queue.value, messages: Object.entries(this.queueHash) }
     return queue
@@ -58,7 +58,9 @@ export class ToastMessageQueueService implements UiToastService {
 
   public unregister(queue: Ref<UiToastQueueModel>) {
     queue.value = { ...queue.value, messages: [] }
-    this.queueList = this.queueList.filter(q => q.value.key !== queue.value.key)
+    this.queueList = this.queueList.filter(
+      (q) => q.value.key !== queue.value.key
+    )
 
     if (this.queueList.length > 0) {
       const lastQueue = this.queueList[this.queueList.length - 1]

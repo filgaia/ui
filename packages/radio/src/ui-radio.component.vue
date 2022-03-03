@@ -53,9 +53,12 @@ export default defineComponent({
   },
   emits: ['update:modelValue'],
   setup(props, { emit, attrs, slots }) {
-    const { inline, groupName, modelValue, ['switch']: switchValue } = toRefs(
-      props
-    )
+    const {
+      inline,
+      groupName,
+      modelValue,
+      ['switch']: switchValue,
+    } = toRefs(props)
     const id = generateId()
     const checkedValue = ref(modelValue.value)
 
@@ -86,13 +89,13 @@ export default defineComponent({
       return asCheckbox ? 'checkbox' : 'radio'
     })
 
-    watch(modelValue, value => (checkedValue.value = value))
+    watch(modelValue, (value) => (checkedValue.value = value))
 
     const nameValue = computed((): string => {
       return groupName.value ?? null
     })
 
-    watch(checkedValue, v => emit('update:modelValue', v))
+    watch(checkedValue, (v) => emit('update:modelValue', v))
 
     return {
       id,

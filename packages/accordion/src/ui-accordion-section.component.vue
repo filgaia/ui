@@ -98,7 +98,7 @@ export default defineComponent({
       if (sectionState.value) {
         if (value && !disabled.value) {
           if (!state.multiple) {
-            state.sections.forEach(item => (item.active = false))
+            state.sections.forEach((item) => (item.active = false))
           }
           sectionState.value.active = true
         } else {

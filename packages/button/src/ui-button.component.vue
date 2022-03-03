@@ -46,9 +46,8 @@ export default defineComponent({
   },
   emits: ['toggle'],
   setup(props, { emit, attrs }) {
-    const { anchor, toggle, outline, variant, size, active, disabled } = toRefs(
-      props
-    )
+    const { anchor, toggle, outline, variant, size, active, disabled } =
+      toRefs(props)
     const activeState = ref(active.value)
     const disableState = ref(disabled.value)
 

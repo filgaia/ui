@@ -26,7 +26,7 @@ const Template = (args: StoryModel) => ({
   setup() {
     const { label, ...newArgs } = args
     const value = ref('two')
-    watch(value, v => action('updated:modelValue')(v))
+    watch(value, (v) => action('updated:modelValue')(v))
     return { args: newArgs, label, value }
   },
   template: `

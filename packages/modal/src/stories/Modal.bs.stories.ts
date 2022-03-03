@@ -141,8 +141,7 @@ Fullscreen.args = {
 Fullscreen.parameters = {
   docs: {
     source: {
-      code:
-        '<ui-modal title="Fullscreen" fullscreen dismissible show>Some body</ui-modal>',
+      code: '<ui-modal title="Fullscreen" fullscreen dismissible show>Some body</ui-modal>',
     },
   },
 }
@@ -156,8 +155,7 @@ Dismissible.args = {
 Dismissible.parameters = {
   docs: {
     source: {
-      code:
-        '<ui-modal title="Dismissible" dismissible show>Some body</ui-modal>',
+      code: '<ui-modal title="Dismissible" dismissible show>Some body</ui-modal>',
     },
   },
 }
@@ -173,8 +171,7 @@ DisableBackdrop.args = {
 DisableBackdrop.parameters = {
   docs: {
     source: {
-      code:
-        '<ui-modal title="Disable Backdrop" disableBackdrop disableEscKey show>Some body</ui-modal>',
+      code: '<ui-modal title="Disable Backdrop" disableBackdrop disableEscKey show>Some body</ui-modal>',
     },
   },
 }
@@ -188,8 +185,7 @@ VerticalCenter.args = {
 VerticalCenter.parameters = {
   docs: {
     source: {
-      code:
-        '<ui-modal title="Vertical Center" verticalCenter show>Some body</ui-modal>',
+      code: '<ui-modal title="Vertical Center" verticalCenter show>Some body</ui-modal>',
     },
   },
 }

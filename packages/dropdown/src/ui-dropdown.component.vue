@@ -215,7 +215,7 @@ export default defineComponent({
 
     const watchExpanded = watch(
       expanded,
-      value => {
+      (value) => {
         value ? emit('show') : emit('hide')
 
         if (value && mainButton.value && menu.value) {

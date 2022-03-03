@@ -126,8 +126,7 @@ Inverted.args = {
 Inverted.parameters = {
   docs: {
     source: {
-      code:
-        '<ui-menu inverted :datasource="datasource" @select="select"></ui-menu>',
+      code: '<ui-menu inverted :datasource="datasource" @select="select"></ui-menu>',
     },
   },
 }
@@ -140,8 +139,7 @@ DefaultIndex.args = {
 DefaultIndex.parameters = {
   docs: {
     source: {
-      code:
-        '<ui-menu defaultSelectedIndex="4" :datasource="datasource" @select="select"></ui-menu>',
+      code: '<ui-menu defaultSelectedIndex="4" :datasource="datasource" @select="select"></ui-menu>',
     },
   },
 }

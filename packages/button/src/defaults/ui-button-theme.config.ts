@@ -3,8 +3,7 @@ import { UiButtonThemeConfigModel } from '../'
 
 export const uiButtonThemeConfigDefaults: UiButtonThemeConfigModel = {
   cssClass: {
-    main:
-      'inline-block text-base font-normal leading-normal text-center no-underline align-middle cursor-pointer select-none bg-transparent border border-solid border-transparent rounded-lg  p-1 pr-2 pl-2 focus-within:ring-4 ring-gray-200 outline-none text-white',
+    main: 'inline-block text-base font-normal leading-normal text-center no-underline align-middle cursor-pointer select-none bg-transparent border border-solid border-transparent rounded-lg  p-1 pr-2 pl-2 focus-within:ring-4 ring-gray-200 outline-none text-white',
     active: 'filter contrast-75',
     outline: 'bg-transparent text-black',
     disabled: {

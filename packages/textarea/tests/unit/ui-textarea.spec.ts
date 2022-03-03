@@ -1,5 +1,4 @@
 import { shallowMount, mount } from '@vue/test-utils'
-import exp from 'constants'
 import { UiTextarea } from '../../src'
 import { uiTextareaThemeConfigDefaults } from '../../src/defaults/ui-textarea-theme.config'
 

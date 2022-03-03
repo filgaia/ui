@@ -107,7 +107,7 @@ const filteredPages = computed(() => {
     } else if (diffLast >= -diff) {
       return trimmedPages.slice(-maxVisiblePages.value)
     } else {
-      return trimmedPages.filter(p => {
+      return trimmedPages.filter((p) => {
         const diffPage = page.value - p
         return diffPage < 0 ? Math.abs(diffPage) <= diff : diffPage < diff
       })
@@ -127,7 +127,7 @@ const pages = computed(() => {
           ? totalPagesCount.value - 2
           : '...',
       ]
-    : [...Array(totalPagesCount.value - 2).keys()].map(p => p + 1)
+    : [...Array(totalPagesCount.value - 2).keys()].map((p) => p + 1)
 
   return [
     page.value - 1,
@@ -187,7 +187,7 @@ const pageChange = (p: number) => {
   rangeChange()
 }
 
-watch(page, page => {
+watch(page, (page) => {
   pageChange(page)
 })
 

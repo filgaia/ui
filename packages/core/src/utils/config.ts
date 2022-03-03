@@ -15,12 +15,12 @@ declare type ConfigLevel = { [key: string]: string | undefined | ConfigLevel }
 function valuePaths(item: ConfigLevel): { [key: string]: string } {
   const keys = Object.keys(item)
   const paths: { [key: string]: string } = {}
-  keys.forEach(key => {
+  keys.forEach((key) => {
     if (typeof item[key] === 'string') {
       paths[key] = item[key] as string
     } else {
       Object.keys(item[key] || {}).forEach(
-        subKey =>
+        (subKey) =>
           (paths[`${key}:${subKey}`] = (item[key] as ConfigLevel)[
             subKey
           ] as string) // only two levels
@@ -55,7 +55,9 @@ function unsetValue(item: ConfigLevel, path: string, value: string) {
   const classList = value.split(' ')
   const parts = path.split(':')
   if (parts.length === 1 && typeof item[path] === 'string') {
-    classList.forEach(v => (item[path] = (item[path] as string).replace(v, '')))
+    classList.forEach(
+      (v) => (item[path] = (item[path] as string).replace(v, ''))
+    )
   } else if (parts.length > 1 && typeof item[path] !== 'string') {
     const nextLevel = item[parts[0]] as KeyPairString
     const nextPath = parts.splice(1).join(':')
@@ -92,7 +94,7 @@ function replaceThemeConfig(
 ) {
   // replace
   keyPaths(config)
-    .map(key => [key, `${prefix}:${key}`])
+    .map((key) => [key, `${prefix}:${key}`])
     .filter(([, propName]) => !!attrs[propName])
     .forEach(([key, propName]) =>
       setValue(config, key, attrs[propName] as string)
@@ -100,7 +102,7 @@ function replaceThemeConfig(
 
   // append
   keyPaths(config)
-    .map(key => [key, `${prefix}:${key}.add`])
+    .map((key) => [key, `${prefix}:${key}.add`])
     .filter(([, propName]) => !!attrs[propName])
     .forEach(([key, propName]) =>
       setValue(config, key, attrs[propName] as string, true)
@@ -108,7 +110,7 @@ function replaceThemeConfig(
 
   // remove
   keyPaths(config)
-    .map(key => [key, `${prefix}:${key}.remove`])
+    .map((key) => [key, `${prefix}:${key}.remove`])
     .filter(([, propName]) => !!attrs[propName])
     .forEach(([key, propName]) =>
       unsetValue(config, key, attrs[propName] as string)
@@ -139,8 +141,8 @@ function getThemeConfig<T extends UiComponentThemeConfigModel>(
     const cssDarkPlain = valuePaths(themeConfig.cssDark)
     // replace dark mode into normal mode
     keyPaths(themeConfig.cssClass)
-      .filter(key => !!cssDarkPlain[key])
-      .forEach(key =>
+      .filter((key) => !!cssDarkPlain[key])
+      .forEach((key) =>
         setValue(themeConfig.cssClass, key, cssDarkPlain[key] as string)
       )
   }
@@ -157,7 +159,7 @@ function getAriaConfig<T extends UiComponentAriaConfigModel>(
 
   // replace aria
   keyPaths(ariaConfig)
-    .map(key => [key, `aria:${key}`])
+    .map((key) => [key, `aria:${key}`])
     .filter(([, propName]) => !!attrs[propName])
     .forEach(([key, propName]) =>
       setValue(ariaConfig, key, attrs[propName] as string)
@@ -172,7 +174,7 @@ function flattenProps(
 ) {
   const propsReactive = toRefs(_props)
   const props = Object.keys(propsReactive)
-    .map(p => ({ [p]: propsReactive[p].value }))
+    .map((p) => ({ [p]: propsReactive[p].value }))
     .reduce((o, p) => ({ ...o, ...p }), {})
 
   return {

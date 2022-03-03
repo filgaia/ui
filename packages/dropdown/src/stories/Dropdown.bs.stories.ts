@@ -101,7 +101,7 @@ const Template = (args: UiDropdownModel) => ({
   setup() {
     const container: Ref<HTMLElement | null> = ref(null)
 
-    watch(container, elem =>
+    watch(container, (elem) =>
       elem?.scrollIntoView({ block: 'center', inline: 'center' })
     )
 
@@ -139,8 +139,7 @@ Primary.args = {
 Primary.parameters = {
   docs: {
     source: {
-      code:
-        '<ui-dropdown variant="primary" label="Primary" :datasource="datasource" @select="select"></ui-dropdown>',
+      code: '<ui-dropdown variant="primary" label="Primary" :datasource="datasource" @select="select"></ui-dropdown>',
     },
   },
 }
@@ -154,8 +153,7 @@ Secondary.args = {
 Secondary.parameters = {
   docs: {
     source: {
-      code:
-        '<ui-dropdown variant="secondary" label="Secondary" :datasource="datasource" @select="select"></ui-dropdown>',
+      code: '<ui-dropdown variant="secondary" label="Secondary" :datasource="datasource" @select="select"></ui-dropdown>',
     },
   },
 }
@@ -169,8 +167,7 @@ Success.args = {
 Success.parameters = {
   docs: {
     source: {
-      code:
-        '<ui-dropdown variant="success" label="Success" :datasource="datasource" @select="select"></ui-dropdown>',
+      code: '<ui-dropdown variant="success" label="Success" :datasource="datasource" @select="select"></ui-dropdown>',
     },
   },
 }
@@ -184,8 +181,7 @@ Danger.args = {
 Danger.parameters = {
   docs: {
     source: {
-      code:
-        '<ui-dropdown variant="danger" label="Danger" :datasource="datasource" @select="select"></ui-dropdown>',
+      code: '<ui-dropdown variant="danger" label="Danger" :datasource="datasource" @select="select"></ui-dropdown>',
     },
   },
 }
@@ -199,8 +195,7 @@ Warning.args = {
 Warning.parameters = {
   docs: {
     source: {
-      code:
-        '<ui-dropdown variant="warning" label="Warning" :datasource="datasource" @select="select"></ui-dropdown>',
+      code: '<ui-dropdown variant="warning" label="Warning" :datasource="datasource" @select="select"></ui-dropdown>',
     },
   },
 }
@@ -214,8 +209,7 @@ Info.args = {
 Info.parameters = {
   docs: {
     source: {
-      code:
-        '<ui-dropdown variant="info" label="Info" :datasource="datasource" @select="select"></ui-dropdown>',
+      code: '<ui-dropdown variant="info" label="Info" :datasource="datasource" @select="select"></ui-dropdown>',
     },
   },
 }
@@ -229,8 +223,7 @@ Light.args = {
 Light.parameters = {
   docs: {
     source: {
-      code:
-        '<ui-dropdown variant="light" label="Light" :datasource="datasource" @select="select"></ui-dropdown>',
+      code: '<ui-dropdown variant="light" label="Light" :datasource="datasource" @select="select"></ui-dropdown>',
     },
   },
 }
@@ -245,8 +238,7 @@ Dark.args = {
 Dark.parameters = {
   docs: {
     source: {
-      code:
-        '<ui-dropdown variant="dark" label="Dark" :datasource="datasource" @select="select"></ui-dropdown>',
+      code: '<ui-dropdown variant="dark" label="Dark" :datasource="datasource" @select="select"></ui-dropdown>',
     },
   },
 }
@@ -261,8 +253,7 @@ MenuAlignEnd.args = {
 MenuAlignEnd.parameters = {
   docs: {
     source: {
-      code:
-        '<ui-dropdown menuAlignEnd varianr="success" label="MenuAlignEnd" :datasource="datasource" @select="select"></ui-dropdown>',
+      code: '<ui-dropdown menuAlignEnd varianr="success" label="MenuAlignEnd" :datasource="datasource" @select="select"></ui-dropdown>',
     },
   },
 }
@@ -277,8 +268,7 @@ Left.args = {
 Left.parameters = {
   docs: {
     source: {
-      code:
-        '<ui-dropdown variant="warning" arrowDirection="left" label="Left" :datasource="datasource" @select="select"></ui-dropdown>',
+      code: '<ui-dropdown variant="warning" arrowDirection="left" label="Left" :datasource="datasource" @select="select"></ui-dropdown>',
     },
   },
 }
@@ -293,8 +283,7 @@ Right.args = {
 Right.parameters = {
   docs: {
     source: {
-      code:
-        '<ui-dropdown variant="warning" arrowDirection="right" label="Right" :datasource="datasource" @select="select"></ui-dropdown>',
+      code: '<ui-dropdown variant="warning" arrowDirection="right" label="Right" :datasource="datasource" @select="select"></ui-dropdown>',
     },
   },
 }
@@ -309,8 +298,7 @@ Up.args = {
 Up.parameters = {
   docs: {
     source: {
-      code:
-        '<ui-dropdown variant="warning" arrowDirection="up" label="Up" :datasource="datasource" @select="select"></ui-dropdown>',
+      code: '<ui-dropdown variant="warning" arrowDirection="up" label="Up" :datasource="datasource" @select="select"></ui-dropdown>',
     },
   },
 }
@@ -325,8 +313,7 @@ SplitButton.args = {
 SplitButton.parameters = {
   docs: {
     source: {
-      code:
-        '<ui-dropdown variant="danger" splitButton label="Split Button" :datasource="datasource" @select="select"></ui-dropdown>',
+      code: '<ui-dropdown variant="danger" splitButton label="Split Button" :datasource="datasource" @select="select"></ui-dropdown>',
     },
   },
 }

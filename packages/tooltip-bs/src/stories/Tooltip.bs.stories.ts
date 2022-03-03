@@ -22,26 +22,25 @@ type StoryModel = {
   tooltip: string
 }
 
-const TemplateFn = (position: PopperCardinalPlacements) => (
-  args: StoryModel
-) => ({
-  setup() {
-    install()
+const TemplateFn =
+  (position: PopperCardinalPlacements) => (args: StoryModel) => ({
+    setup() {
+      install()
 
-    return { args }
-  },
-  methods: {
-    open: action('open'),
-    show: action('show'),
-    hide: action('hide'),
-    close: action('close'),
-  },
-  template: `
+      return { args }
+    },
+    methods: {
+      open: action('open'),
+      show: action('show'),
+      hide: action('hide'),
+      close: action('close'),
+    },
+    template: `
     <button v-ui-tooltip:${position}="args.tooltip" @open="open" @show="show" @close="close" @hide="hide">
     {{args.default}}
     </button>
   `,
-})
+  })
 
 const baseArgs: StoryModel = {
   default: 'Some text',

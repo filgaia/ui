@@ -69,14 +69,8 @@ export default defineComponent({
   },
   emits: ['toggle', 'click'],
   setup(props, { emit, attrs }) {
-    const {
-      outline,
-      anchor,
-      size,
-      variant,
-      splitButton,
-      arrowDirection,
-    } = toRefs(props)
+    const { outline, anchor, size, variant, splitButton, arrowDirection } =
+      toRefs(props)
 
     const expanded = ref(false)
 
