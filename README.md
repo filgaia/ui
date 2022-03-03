@@ -7,7 +7,7 @@ npm install --global yarn
 ```
 Then run install
 ```
-yarn install
+yarn
 ```
 
 ### run storybook
@@ -18,6 +18,11 @@ yarn storybook
 ### run storybook for tailwind
 ```
 yarn storybook-tailwind
+```
+
+### run storybook for bootstrap (Default)
+```
+yarn storybook-bs
 ```
 
 ### Compiles and minifies for production
